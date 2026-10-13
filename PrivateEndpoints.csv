@@ -1,0 +1,2 @@
+﻿Name,Fqdn,ExpectedPrivateIP,Port
+AzureMigrateEndpoint1,REPLACE_WITH_ACTUAL_FQDN,10.50.10.4,443

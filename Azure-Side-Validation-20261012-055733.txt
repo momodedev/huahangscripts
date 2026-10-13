@@ -1,0 +1,168 @@
+**********************
+PowerShell transcript start
+Start time: 20261012055733
+Username: SandboxHost-639273773839217719\v-chengzhiz
+RunAs User: SandboxHost-639273773839217719\v-chengzhiz
+Configuration Name: 
+Machine: SandboxHost-639273773839217719 (Unix 6.1.158.2)
+Host Application: /opt/microsoft/powershell/7/pwsh.dll -NoLogo
+Process ID: 1676
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Azure Linux 3.0
+Platform: Unix
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./AzureMigrate-Network-Test/Azure-Side-Validation-20261012-055733.txt
+=== Azure Context ===
+
+Account      : MSI@50342
+Subscription : 95642268-5116-484d-9b88-7dfce8c20ce4
+Tenant       : 8dc94566-ec40-4aad-abe0-739751b9d5b4
+
+
+=== Private Endpoints in Resource Group ===
+
+Private Endpoint: applforplink660824project8940pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Migrate/assessmentprojects/applforplink660824project
+Group IDs: Default
+Connection State: Approved
+Description:
+NIC: applforplink660824project8940pe.nic.16d3bb04-00e8-4a80-bc58-8b169d6456db
+Private IP: 10.30.1.6
+Allocation: Dynamic
+
+Private Endpoint: applforplink660824vault1383pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.RecoveryServices/vaults/applforplink660824vault
+Group IDs: AzureSiteRecovery
+Connection State: Approved
+Description: Auto Approved Request.
+NIC: applforplink660824vault1383pe.nic.35a34271-08de-46e6-afa6-a0003ec18794
+Private IP: 10.30.1.8
+Allocation: Dynamic
+NIC: applforplink660824vault1383pe.nic.35a34271-08de-46e6-afa6-a0003ec18794
+Private IP: 10.30.1.9
+Allocation: Dynamic
+NIC: applforplink660824vault1383pe.nic.35a34271-08de-46e6-afa6-a0003ec18794
+Private IP: 10.30.1.10
+Allocation: Dynamic
+NIC: applforplink660824vault1383pe.nic.35a34271-08de-46e6-afa6-a0003ec18794
+Private IP: 10.30.1.11
+Allocation: Dynamic
+NIC: applforplink660824vault1383pe.nic.35a34271-08de-46e6-afa6-a0003ec18794
+Private IP: 10.30.1.12
+Allocation: Dynamic
+
+Private Endpoint: mp661572kv6627pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.KeyVault/vaults/mp661572kv
+Group IDs: vault
+Connection State: Approved
+Description:
+NIC: mp661572kv6627pe.nic.d3fa0c4b-8c37-410a-983c-40b66b8463e4
+Private IP: 10.30.1.7
+Allocation: Dynamic
+
+Private Endpoint: mp661572mastersite2025pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.OffAzure/MasterSites/mp661572mastersite
+Group IDs: Default
+Connection State: Approved
+Description:
+NIC: mp661572mastersite2025pe.nic.86414868-cef9-4c8d-b838-b59990e5e13c
+Private IP: 10.30.1.13
+Allocation: Dynamic
+
+Private Endpoint: mp665518usa7010pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Storage/storageAccounts/mp665518usa
+Group IDs: blob
+Connection State: Approved
+Description: Auto-Approved
+NIC: mp665518usa7010pe.nic.06774c10-67c9-43fe-bae0-88ee49269e08
+Private IP: 10.30.1.5
+Allocation: Dynamic
+
+Private Endpoint: mp669750pe
+Location: westus2
+Subnet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet/subnets/snet-private-endpoint
+Target Resource: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Migrate/MigrateProjects/mp66
+Group IDs: Default
+Connection State: Approved
+Description:
+NIC: mp669750pe.nic.993fa4b5-15a7-4efa-bda5-716ac2d4a0ab
+Private IP: 10.30.1.4
+Allocation: Dynamic
+
+=== Private DNS Zones accessible to current account ===
+
+Zone: privatelink.blob.core.windows.net
+Resource Group: rg-infra-winmig-apac-v-chengzhiz-poc
+VNet Link: azmpe-lab-migrate-vnet1595vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet
+Link State: Completed
+Registration Enabled: False
+VNet Link: azmpe-lab-sim-vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-sim-onprem-vnet
+Link State: Completed
+Registration Enabled: False
+A Record: mp665518usa -> 10.30.1.5
+
+Zone: privatelink.prod.migration.windowsazure.com
+Resource Group: rg-infra-winmig-apac-v-chengzhiz-poc
+VNet Link: azmpe-lab-migrate-vnet1595vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet
+Link State: Completed
+Registration Enabled: False
+VNet Link: azmpe-lab-sim-vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-sim-onprem-vnet
+Link State: Completed
+Registration Enabled: False
+A Record: 3be8d29e351347dd888dcf1be9fb78b8-agent.myw.asm -> 10.30.1.6
+A Record: 618f3161-af47-424b-9951-e8051548ef9a-agent.myw.disc -> 10.30.1.13
+A Record: 034dafbf-b455-48b8-b7dc-6009bfbd7712-isv.myw.hub -> 10.30.1.4
+
+Zone: privatelink.siterecovery.windowsazure.com
+Resource Group: rg-infra-winmig-apac-v-chengzhiz-poc
+VNet Link: azmpe-lab-migrate-vnet1595vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet
+Link State: Completed
+Registration Enabled: False
+VNet Link: azmpe-lab-sim-vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-sim-onprem-vnet
+Link State: Completed
+Registration Enabled: False
+A Record: 5685023632935581021-asr-pod01-id1.myw -> 10.30.1.10
+A Record: 5685023632935581021-asr-pod01-prot2.myw -> 10.30.1.8
+A Record: 5685023632935581021-asr-pod01-rcm1.myw -> 10.30.1.9
+A Record: 5685023632935581021-asr-pod01-srs1.myw -> 10.30.1.12
+A Record: 5685023632935581021-asr-pod01-tel1.myw -> 10.30.1.11
+
+Zone: privatelink.vaultcore.azure.net
+Resource Group: rg-infra-winmig-apac-v-chengzhiz-poc
+VNet Link: azmpe-lab-migrate-vnet1595vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-migrate-vnet
+Link State: Completed
+Registration Enabled: False
+VNet Link: azmpe-lab-sim-vnetlink
+VNet ID: /subscriptions/95642268-5116-484d-9b88-7dfce8c20ce4/resourceGroups/rg-infra-winmig-apac-v-chengzhiz-poc/providers/Microsoft.Network/virtualNetworks/azmpe-lab-sim-onprem-vnet
+Link State: Completed
+Registration Enabled: False
+A Record: mp661572kv -> 10.30.1.7
+
+=== VPN Gateway Connections in Resource Group ===
+**********************
+PowerShell transcript end
+End time: 20261012055752
+**********************
